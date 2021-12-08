@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quadro de Desenho</title>
+  </head>
+  <body>
+    <h1>Canvas</h1>
+    <div class="container">
+      <canvas class="canvas" id="canvas" width="800" height="400">
+          
+      </canvas>
+      <div class="tools">
+        <div class="color-tools">
+          <div class="color-selector-wrapper">
+            <input type="color" name="color-selector" id="color-selector">
+          </div>
+          <div class="color-palette">
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+            <div data-color="#ffffff" class="color-space"></div>
+          </div>
+        </div>
+        <div class="line-tools">
+          <div class="line-text"></div>
+          <input type="range" name="line-size" id="line-size" min="1" max="50" value="3">
+        </div>
+        <div class="clear-tools">
+          <div class="btn">Limpar Quadro</div>
+        </div>
+        <div class="download-tools">
+          <div class="btn">Baixar Imagem</div>
+        </div>
+        <div class="tracking-tools">
+          <div class="tracking-info">x: ----</div>
+          <div class="tracking-info">y: ----</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Criado por Azuryanz <br> seguindo o <a href="https://alunos.b7web.com.br/curso/javascript/d7js-projeto-5-quadro-de-desenho" target="blank">modelo da B7Web</a></p>
+    </footer>
+
+    <script src="assets/scripts/color-box.js"></script>
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>
